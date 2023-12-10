@@ -9,6 +9,13 @@ public class Button extends JButton {
     // bu değişken boolean tipinde dedğer tutar.
     // bu değişken ile de butonun aktif olup olmadığını kontrol edeceğiz.
     private boolean aktifMi;
+     private Color aktifRenk = Color.red;
+    // aktif icon tanımlanır
+    private ImageIcon aktifIcon = new ImageIcon(getClass().getResource("thunder.png"));
+    // pasif renk tanımlanır
+    private Color pasifRenk = Color.blue;
+    // pasif icon tanımlanır
+    private ImageIcon pasifIcon = new ImageIcon(getClass().getResource("cloud.png"));
 
     // yapıcı metot oluşturup gerekli metotlar çağrılır.
     public Button(){
@@ -32,13 +39,13 @@ public class Button extends JButton {
     private void butonTiklama(){
         if (aktifMi){
             // buton aktif durumda ise rengi ve iconu
-            setBackground(Color.red);
-            setIcon(new ImageIcon(getClass().getResource("thunder.png")));
+            setBackground(aktifRenk);
+            setIcon(aktifIcon);
         }
         else {
             // buton pasif durumda ise rengi ve iconu
-            setBackground(Color.blue);
-            setIcon(new ImageIcon(getClass().getResource("cloud.png")));
+            setBackground(pasifRenk);
+            setIcon(pasifIcon);
 
         }
     }
