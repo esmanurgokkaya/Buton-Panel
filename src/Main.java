@@ -14,12 +14,11 @@ public class Main {
             frame.setLayout(new GridLayout(4,4,5,5));
 
             // for döngüsü kullanılarak butonlar oluşturulur.
-            for (int i = 0 ; i < 4 ; i++){
-                for (int j = 0 ; j < 4 ; j++){
+            for (int i = 0 ; i < 16 ; i++){
                     // içinde özelleştirme yaptığımız class new edilir ve frame eklenir
                     Button buton = new Button();
                     frame.add(buton);
-                }
+                
             }
 
             //framein görünür olması ve boyutunun pencere boyuna göre değişmesi için tanımlanır.
