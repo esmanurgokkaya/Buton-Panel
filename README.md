@@ -6,17 +6,17 @@
 
  Yazılan kodlarda "Button" adında bir class bulunur. Bu class JButton sınıfını extends eder ve kullanacağımız metotları override ederek kullanabiliriz. Bu class içinde kullanacağımız gerekli paketler sayfa başında import edilir. Class içinde kullanılacak değişkenler private olarak tanımlanır.
 
- **Button** yapıcı metot oluşturulur. Bunun içinde butonun ilk  durumu tanımlanır, görünümü için atamalar yapılır ve akksiyon dinleyicisi ile basılma durumuna bakılır. 
+ “`Button“` yapıcı metot oluşturulur. Bunun içinde butonun ilk  durumu tanımlanır, görünümü için atamalar yapılır ve akksiyon dinleyicisi ile basılma durumuna bakılır. 
 
- **butonGorunum** private tanımlanmış class içinde kullanılan bir metottur. Butonun boyutu tanımlanır ve aktif pasif durumuna göre işlemler için metot çağrılır.
+ “`butonGorunum“` private tanımlanmış class içinde kullanılan bir metottur. Butonun boyutu tanımlanır ve aktif pasif durumuna göre işlemler için metot çağrılır.
 
- **butonTiklama** aktifMi değişkeninin true veya false durumuna göre alacağı renk ve ikonlar belirlenir.
+ “`butonTiklama“` aktifMi değişkeninin true veya false durumuna göre alacağı renk ve ikonlar belirlenir.
 
- **dinleyiciOlusturma** burada ActionListener tipinden veri dönmesi için bir metot tanımlanır. actionPerformed adlı metot override edilerek içinde bir kontrol yapısı tanımlanır. Bu butona basılmışsa ve farklı butona basılacaksa öncekini pasif yapar.
+ “`dinleyiciOlusturma“` burada ActionListener tipinden veri dönmesi için bir metot tanımlanır. actionPerformed adlı metot override edilerek içinde bir kontrol yapısı tanımlanır. Bu butona basılmışsa ve farklı butona basılacaksa öncekini pasif yapar.
 
- **pasifYap** bir önceki metot içinden çağrılarak butonu pasif konuma getirir. 
+ “`pasifYap“` bir önceki metot içinden çağrılarak butonu pasif konuma getirir. 
 
- **graphQLSema** bu metot ise basılan butonun aftif olup olmadığını bildiren hayali GraphQL şemasıdır. 
+ “`graphQLSema“` bu metot ise basılan butonun aftif olup olmadığını bildiren hayali GraphQL şemasıdır. 
 
  Kodların içinde bu class da yazılanların çalışması için bir "main" class bulunur. Burada öncelikle pencere tanımlanır. setLayout ile pencere içindeki görünüş grid olarak tanımlanır. 4x4 dizilişinde 5 piksel boşluklardan oluşan bir yapı bulunur. for kullanılarak döngünün her bir adımında  Button clasından yeni bir buton oluşturulup frame e eklenir. En son da pencerre görünüşü ile ilgili kodlar yazılır. 
 
