@@ -16,9 +16,12 @@ public class Button extends JButton {
     private Color pasifRenk = Color.blue;
     // pasif icon tanımlanır
     private ImageIcon pasifIcon = new ImageIcon(getClass().getResource("cloud.png"));
-
+    // hayali graphQL için adresinin tutulacağı bir değişken tanımlanır
+    private String graphQL;
     // yapıcı metot oluşturup gerekli metotlar çağrılır.
-    public Button(){
+    public Button(String graphQL){
+        // alınan değerler değişkenin eşitlemesi yapılır
+        this.graphQL = graphQL;
         // ilk konumda buton pasif halde olur
         aktifMi = false;
         //  butonun görünümü için akktif pasif durumuna göre şekillendirmesi yapılır
@@ -82,7 +85,7 @@ public class Button extends JButton {
     }
 
     private void graphQLSema(){
-        System.out.println( "Butona Tıklandı - Aktif");
+        System.out.println( "Butona Tıklandı - Aktif - " +graphQL);
 
     }
 
