@@ -21,14 +21,22 @@
  Kodların içinde bu class da yazılanların çalışması için bir "main" class bulunur. Burada öncelikle pencere tanımlanır. setLayout ile pencere içindeki görünüş grid olarak tanımlanır. 4x4 dizilişinde 5 piksel boşluklardan oluşan bir yapı bulunur. for kullanılarak döngünün her bir adımında  Button clasından yeni bir buton oluşturulup frame e eklenir. En son da pencerre görünüşü ile ilgili kodlar yazılır. 
 
  # GrapQL
-
- Veri çekmek, üzerinde işlem yapmak, sorgulamak için kullanılan REST(programlama dilinden bağımsız olarak web servis oluşturmak için kullanılan yapıdır) tabanlı web servis sorgulama dilidir. 
+GraphQL, ilk olarak 2012 yılında mobil uygulamalar için kullanmaya başlayan Facebook tarafından geliştirilmiştir. GraphQL içeren çeşitli açık kaynaklı projeler vardır.(Apollo Offix GraphbackOpenAPI-to-GraphQL) Veri çekmek, üzerinde işlem yapmak, sorgulamak için kullanılan REST(programlama dilinden bağımsız olarak web servis oluşturmak için kullanılan yapıdır) tabanlı web servis sorgulama dilidir. Sadece gerekli yapıları sorgulamayı sağladığı için avantajlıdır. 
 
 Sunucu ve istemciden oluşur. Sunucuda istemciye gönderilecek verilerin olduğu bilgiler bulunur. Bunlar GraphQL şemaları, işlemler gibi şeylerdir. Şemanın hazırlanması programlama dillerine göre farklılık gösterir. Hazırlama bittikten sonra veriler kaynaktan alınıp istemciye iletilir. 
 
 GraphQL üstünde işlem yaparken mutation denilen yapı kullanılır. Bunda ekleme, silme, güncelleme gibi işlemler yapılır. 
 
 GraphQL sunucusu temelde sunucuya gönderilen sorguları işler. İstekler sunucuya gönderilirken query parametresi kullanılır. Burada stuff adına alan açılır ve bilgiler alınır. 
+
+Faydaları olarak şunlar sayılabilir.
+-Müşterinin tam olarak hangi verilere ihtiyaç duyduğunu belirlemesini sağlar.
+-Birden çok kaynaktan veri toplamayı kolaylaştırır.
+-Verileri açıklamak için bir tür sistemi kullanır.
+-REST API'lerinde bulunmayan özellikler sunmak için birçok açık kaynaklı GraphQL uzantısı mevcuttur.
+-GraphQL, bir uygulama API'sinin mevcut sorguları bozmadan gelişmesine izin verir.
+-Kesin olarak tanımlanmış veri türleri, istemci ile sunucu arasındaki yanlış iletişimi azaltır.
+-GraphQL çağrıları tek bir gidiş-dönüş yolculuğunda ele alınır. Müşteriler, istediklerini, aşırı yükleme olmadan alırlar.
 
  
  
