@@ -53,7 +53,7 @@ public class Button extends JButton {
             public void actionPerformed(ActionEvent e) {
                 // sınıfın tipinde olan ve son tıklanan butonun referansını tutan değişken ile kontrol yapılır.
                 // ilk olarak bir referans var mı diye sonra da son tıklanan ile aynı mı diye bakılır.
-                // eğer içinde bir referans varsa ve son tıklanan ile aynı değilse son tıklanan pasif yapılır
+                // eğer içinde bir referans varsa ve son tıklanan ile kontrol edilen buton aynı değilse son tıklanan pasif yapılır
                 if (sonTiklanan != null && sonTiklanan != Button.this){
                     sonTiklanan.pasifYap();
                 }
