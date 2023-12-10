@@ -14,11 +14,13 @@ public class Main {
             frame.setLayout(new GridLayout(4,4,5,5));
 
             // for döngüsü kullanılarak butonlar oluşturulur.
-            for (int i = 0 ; i < 16 ; i++){
-                    // içinde özelleştirme yaptığımız class new edilir ve frame eklenir
-                    Button buton = new Button();
+            for (int i = 0 ; i < 4 ; i++){
+                for(int j = 0 ; j < 4 ; j++)
+                    // içinde özelleştirme yaptığımız class new edilir ve frame eklenir.
+                    //parametresi ve kaçıncı buton olduğu eklenir
+                    Button buton = new Button("graphql-adresi " + (i * 4 + j + 1) );
                     frame.add(buton);
-                
+                 }
             }
 
             //framein görünür olması ve boyutunun pencere boyuna göre değişmesi için tanımlanır.
