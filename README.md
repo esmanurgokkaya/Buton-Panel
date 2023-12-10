@@ -1,4 +1,4 @@
- #Buton Kontrol Paneli Uygulması
+ # Buton Kontrol Paneli Uygulması
 
  Bu projede 4x4 adet butondan oluşan bir ekran tasarlandı. Bu butonlara basıldığında aktif renk ve ikon olarak belirlenen değerleri alır. Basılmadığı durumda ise pasif renk ve ikon değerlerini alır.
 
@@ -20,7 +20,7 @@
 
  Kodların içinde bu class da yazılanların çalışması için bir "main" class bulunur. Burada öncelikle pencere tanımlanır. setLayout ile pencere içindeki görünüş grid olarak tanımlanır. 4x4 dizilişinde 5 piksel boşluklardan oluşan bir yapı bulunur. for kullanılarak döngünün her bir adımında  Button clasından yeni bir buton oluşturulup frame e eklenir. En son da pencerre görünüşü ile ilgili kodlar yazılır. 
 
- #GrapQL
+ # GrapQL
 
  Veri çekmek, üzerinde işlem yapmak, sorgulamak için kullanılan REST(programlama dilinden bağımsız olarak web servis oluşturmak için kullanılan yapıdır) tabanlı web servis sorgulama dilidir. 
 
